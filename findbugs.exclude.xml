@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+        <Class name="org.agilis.tracker.domain.application.SpringContext" />
+        <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+    </Match>
+    <Match>
+      <Class name="it.sorintlab.sorint.messenger.controller.MessengerController" />
+      <Bug pattern="DM_DEFAULT_ENCODING" />
+    </Match>
+    <Match>
+        <Class name="it.sorintlab.sorint.messenger.controller.ExceptionHandlerControllerDTO" />
+        <Bug pattern="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" />
+    </Match>
+    <Match>
+        <Class name="org.agilis.tracker.service.AgilisConfiguratorService" />
+        <Bug pattern="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" />
+    </Match>
+    <Match>
+        <Class name="org.agilis.application.sales.domain.statemachine.ActionPropositionGotoAccepted" />
+        <Bug pattern="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" />
+    </Match>
+    <Match>
+        <Class name="org.agilis.tracker.configuration.AgilisOAuth2FeignRequestInterceptor" />
+        <Bug pattern="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" />
+    </Match>
+    <Match>
+        <Class name="org.agilis.common.service.notifier.NotificationService" />
+        <Bug pattern="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" />
+    </Match>
+    <Match>
+        <Class name="org.agilis.common.service.notifier.NotifierBase" />
+        <Bug pattern="URF_UNREAD_FIELD" />
+    </Match>
+    <Match>
+        <Class name="org.agilis.application.sales.domain.statemachine.TransitionPropositionGotoAccepted" />
+        <Bug pattern="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" />
+    </Match>
+    <Match>
+        <Class name="org.agilis.common.service.configurator.ConfiguratorFeignRequestInterceptor" />
+        <Bug pattern="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" />
+    </Match>
+</FindBugsFilter>
