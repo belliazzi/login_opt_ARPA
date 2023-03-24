@@ -2,16 +2,30 @@
 test login upload pdf , CF e otp , message broker 
 
 come partire 
+
+se volete testare in locale 
+   eseguite SpringBoot con profilo local 
+   
+    spring.profiles.active=local
+   
+   
  - nel file application-local.properties 
    settare corretteamnte un data source effettivo esistente 
-   si consiglia un nome di itsanza db otp-spring
+   si consiglia un nome di itsanza db otp_spring
+   
+ 
+  spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+  spring.datasource.jdbcUrl=jdbc:mysql://localhost:3306/otp_spring?serverTimezone=UTC&useLegacyDatetimeCode=false
+  spring.datasource.username=******
+  spring.datasource.password=********
+  spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  spring.jpa.properties.hibernate.jdbc.time_zone=UTC
+  spring.jpa.hibernate.ddl-auto=none
+  spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQLDialect
+  spring.jpa.properties.hibernate.format_sql=true
+  spring.jackson.serialization.fail-on-empty-beans=false
   
  - istallare un kafka nella cartella c:/
-    
-   se volete testare in locale 
-   eseguite SpringBoot con profileo local 
-   
-   
    si consiglia kafka_2.12-2.8.0
    
    eseguire i seguneti comandi 
