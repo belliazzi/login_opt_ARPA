@@ -43,7 +43,7 @@ come partire
     
     dove si spostera lo storage dei file nel vostro file sistem locale 
     nella cartella 
-    upload.dir=C:/Users/damiano/unzippare
+    upload.dir=C:/Users/username/fileStorage
     
     <h3>Par le notifiche</h3>  
     settare in application-local.properties  i dati di un vostro smtp reale effettivo
