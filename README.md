@@ -1,5 +1,5 @@
 # login_opt_registry_file
-test login ullopd pdf , CF e otp , message broker 
+test login upload pdf , CF e otp , message broker 
 
 come partire 
  - nel file application-local.properties 
