@@ -26,6 +26,7 @@ Il comando <b>"mvn clean install"</b> pulirà il progetto eliminando eventuali f
 Il comando <b>"mvn spring-boot:run -Dspring.profiles.active=local"</b> avvierà l'applicazione Spring Boot con il profilo "local" attivato. Il profilo "local" può essere configurato nel file "application.yml" o "application.properties" nella cartella "src/main/resources" del progetto.
 
 
+
 - setting delle properties
  <b>Data Source setting</b>
  - nel file application-local.properties 
@@ -80,7 +81,7 @@ Il comando <b>"mvn spring-boot:run -Dspring.profiles.active=local"</b> avvierà 
     spring.mail.properties.mail.smtp.trust=
     
     
-    per comunicare con wtahtzapp e sms settare i dati di un accout twilio effettivo qui 
+    per comunicare con whatzapp e sms settare i dati di un accout twilio effettivo qui 
     #per whatzapp 
     twilio.accountSid=
     twilio.authToken=your_auth_token
