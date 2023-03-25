@@ -44,11 +44,14 @@ Aprire un terminale o una finestra di comando nella cartella del progetto
   spring.jackson.serialization.fail-on-empty-beans=false
   
  
+ 
   <b>openkm 1.3 setting</b>
   
    se si dispone di un openkm 1.3 raggiungibile 
     settare i paramentri di connessione 
-    nell application.local.propeorties
+    nell application.local.propeorties      
+    
+    
     
     - per open km 
     openkm.url=http://localhost:8080/OpenKM
@@ -57,7 +60,7 @@ Aprire un terminale o una finestra di comando nella cartella del progetto
     openkm.repository=/okm:root/TestFolder
     
     
-    nel qual csao non fosse disponibile bastera settare in 
+    nel qual caso non fosse disponibile bastera settare in 
     application-local.properties 
     
     upload.filesystem.enable=true
