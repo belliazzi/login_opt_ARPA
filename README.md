@@ -50,7 +50,7 @@ Aprire un terminale o una finestra di comando nella cartella del progetto
     settare i paramentri di connessione 
     nell application.local.propeorties
     
-    #per open km 
+    - per open km 
     openkm.url=http://localhost:8080/OpenKM
     openkm.user=<vostro user admin>
     openkm.password=*******
@@ -70,7 +70,7 @@ Aprire un terminale o una finestra di comando nella cartella del progetto
     
     settare in application-local.properties  i dati di un vostro smtp reale effettivo
     
-    #per email 
+    - per email 
 
     spring.mail.host=
     spring.mail.port=
@@ -82,11 +82,11 @@ Aprire un terminale o una finestra di comando nella cartella del progetto
     
     
     per comunicare con whatzapp e sms settare i dati di un accout twilio effettivo qui 
-    #per whatzapp 
+    - per whatzapp 
     twilio.accountSid=
     twilio.authToken=your_auth_token
     twilio.phoneNumber=
-    #per slack 
+    - per slack 
     slack.webhookUrl=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
     slack.token=
     
