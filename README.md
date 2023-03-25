@@ -18,16 +18,14 @@ primo step attivare Topic  kafka
        
  Ecco la sequenza dei comandi di Maven e Spring Boot per partire con il profilo "local":
 
-Aprire un terminale o una finestra di comando nella cartella del progetto
-Eseguire il comando <b>mvn clean install</b> per pulire il progetto e generare un pacchetto di distribuzione
-Eseguire il comando <b>mvn spring-boot:run -Dspring.profiles.active=local</b> per avviare l'applicazione Spring Boot con il profilo "local" attivato
-Il comando <b>"mvn clean install"</b> pulirà il progetto eliminando eventuali file temporanei e genererà un pacchetto di distribuzione (in genere un file JAR) contenente l'applicazione Spring Boot.
+Aprire un terminale o una finestra di comando nella cartella del progetto 
 
-Il comando <b>"mvn spring-boot:run -Dspring.profiles.active=local"</b> avvierà l'applicazione Spring Boot con il profilo "local" attivato. Il profilo "local" può essere configurato nel file "application.yml" o "application.properties" nella cartella "src/main/resources" del progetto.
+<b>mvn clean install</b> per pulire il progetto e generare un pacchetto di distribuzione
 
+<b>mvn spring-boot:run -Dspring.profiles.active=local</b> per avviare l'applicazione Spring Boot con il profilo "local" attivato
 
+<h3>setting delle properties</h3>
 
-- setting delle properties
  <b>Data Source setting</b>
  - nel file application-local.properties 
    settare corretteamnte un data source effettivo esistente 
@@ -46,7 +44,8 @@ Il comando <b>"mvn spring-boot:run -Dspring.profiles.active=local"</b> avvierà 
   spring.jackson.serialization.fail-on-empty-beans=false
   
  
-  <b>openkm 1.3</b>    
+  <b>openkm 1.3 setting</b>
+  
    se si dispone di un openkm 1.3 raggiungibile 
     settare i paramentri di connessione 
     nell application.local.propeorties
@@ -67,7 +66,8 @@ Il comando <b>"mvn spring-boot:run -Dspring.profiles.active=local"</b> avvierà 
     nella cartella 
     upload.dir=C:/Users/username/fileStorage
     
-    <h3>Par le notifiche</h3>  
+    <h3>Per le notifiche email sms slack e whatzapp</h3>
+    
     settare in application-local.properties  i dati di un vostro smtp reale effettivo
     
     #per email 
