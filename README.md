@@ -1,14 +1,33 @@
 # login_opt_registry_file
 test login upload pdf , CF e otp , message broker 
 
-come partire 
+Get started
+primo step attivare Topic  kafka 
+- istallare un kafka nella cartella c:/
+   si consiglia kafka_2.12-2.8.0
+   
+   eseguire i seguneti comandi 
+   - 1  cd C:\kafka_2.12-2.8.0\bin\windows
+        
+   - 2  kafka-server-start.bat C:\kafka_2.12-2.8.0\config\server.properties
+    
+   - 3 zookeeper-server-start.bat C:\kafka_2.12-2.8.0\config\zookeeper.properties
+   
+   - 4 creare un topic arubatopic 
+       kafka-topics --zookeeper 127.0.0.1:2181 --topic arubatopic  --create --partitions 3 --replication-factor 1
+       
+ Ecco la sequenza dei comandi di Maven e Spring Boot per partire con il profilo "local":
 
-se volete testare in locale 
-   eseguite SpringBoot con profilo local 
-   
-    spring.profiles.active=local
-   
-   
+Aprire un terminale o una finestra di comando nella cartella del progetto
+Eseguire il comando <b>mvn clean install</b> per pulire il progetto e generare un pacchetto di distribuzione
+Eseguire il comando <b>mvn spring-boot:run -Dspring.profiles.active=local</b> per avviare l'applicazione Spring Boot con il profilo "local" attivato
+Il comando <b>"mvn clean install"</b> pulirà il progetto eliminando eventuali file temporanei e genererà un pacchetto di distribuzione (in genere un file JAR) contenente l'applicazione Spring Boot.
+
+Il comando <b>"mvn spring-boot:run -Dspring.profiles.active=local"</b> avvierà l'applicazione Spring Boot con il profilo "local" attivato. Il profilo "local" può essere configurato nel file "application.yml" o "application.properties" nella cartella "src/main/resources" del progetto.
+
+
+- setting delle properties
+ <b>Data Source setting</b>
  - nel file application-local.properties 
    settare corretteamnte un data source effettivo esistente 
    si consiglia un nome di itsanza db otp_spring
@@ -25,20 +44,8 @@ se volete testare in locale
   spring.jpa.properties.hibernate.format_sql=true
   spring.jackson.serialization.fail-on-empty-beans=false
   
- - istallare un kafka nella cartella c:/
-   si consiglia kafka_2.12-2.8.0
-   
-   eseguire i seguneti comandi 
-   - 1  cd C:\kafka_2.12-2.8.0\bin\windows
-        
-   - 2  kafka-server-start.bat C:\kafka_2.12-2.8.0\config\server.properties
-    
-   - 3 zookeeper-server-start.bat C:\kafka_2.12-2.8.0\config\zookeeper.properties
-   
-   - 4 creare un topic arubatopic 
-       kafka-topics --zookeeper 127.0.0.1:2181 --topic arubatopic  --create --partitions 3 --replication-factor 1
-       
-      
+ 
+  <b>openkm 1.3</b>    
    se si dispone di un openkm 1.3 raggiungibile 
     settare i paramentri di connessione 
     nell application.local.propeorties
@@ -81,6 +88,8 @@ se volete testare in locale
     #per slack 
     slack.webhookUrl=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
     slack.token=
+    
+    
     
     
   
